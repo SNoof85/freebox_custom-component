@@ -42,7 +42,7 @@ class FbxTempSensor(Entity):
         self._datas = await self._fbx.system.get_config()
         for temp_sensor in self._datas['sensors']:
             if temp_sensor['id'] == self._sensor_id:
-                self._name = temp_sensor['name']
+                self._name = "freebox_"+temp_sensor['name']
                 self._state = temp_sensor['value']
 
 class FbxConnSensor(Entity):
