@@ -11,7 +11,6 @@ _LOGGER = logging.getLogger(__name__)
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the sensors."""
     fbx = hass.data[DATA_FREEBOX]
-    fbx = hass.data[DATA_FREEBOX]
     sys_config = await fbx.system.get_config()
     for sensor_id in sys_config['sensors']:
         async_add_entities([FbxTempSensor(fbx, sensor_id['id'])], True)
