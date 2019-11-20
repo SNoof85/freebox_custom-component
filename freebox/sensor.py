@@ -12,10 +12,12 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     """Set up the sensors."""
     fbx = hass.data[DATA_FREEBOX]
     sys_config = await fbx.system.get_config()
-    for sensor_id in sys_config['sensors']:
-        async_add_entities([FbxTempSensor(fbx, sensor_id['id'])], True)
-    async_add_entities([FbxRXSensor(fbx), FbxTXSensor(fbx)], True)
+    fbx_sensors = []
+    for temp_sensor_id in sys_config['sensors']:
+        fbx_sensors.append(FbxTempSensor(fbx, temp_sensor_id['id']))
 
+    fbx_sensors.extend([FbxRXSensor(fbx), FbxTXSensor(fbx)])
+    async_add_entities(fbx_sensors, True)
 
 class FbxTempSensor(Entity):
 
