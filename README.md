@@ -1,6 +1,8 @@
 # freebox_custom-component v0.0.1
 
-Custom component pour la Freebox.
+Custom component Home Assitant pour la Freebox (Mini 4k, Révolution, Delta)
+
+---
 
 - Différences par rapport à la version intégrée à Home Assistant :
   - Utilisation de l'API V6
