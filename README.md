@@ -1,4 +1,4 @@
-# freebox_custom-component
+# freebox_custom-component v0.0.1
 
 Custom component pour la Freebox.
 
