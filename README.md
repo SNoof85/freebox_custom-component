@@ -8,8 +8,8 @@ Custom component Home Assitant pour la Freebox (Mini 4k, Révolution, Delta)
   - Utilisation de l'API V6
 
 - Ajouts par rapport à la version intégrée à Home Assistant : 
-  - Sensor température (CPU, HDD, SWITCH...) => En cours d'intégration à Home Assistant https://github.com/home-assistant/home-assistant/pull/28906
-  - Service freebox.reboot pour redémarrer la freebox
+  - Sensor température (CPU, HDD, SWITCH...)
+  - Service freebox.reboot pour redémarrer la freebox => PR Officiel ouvert
 
 - Retraits par rapport à la version intégrée à Home Assistant : 
   - RAS
