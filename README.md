@@ -5,7 +5,7 @@ Custom component Home Assitant pour la Freebox (Mini 4k, Révolution, Delta)
 ---
 
 - Différences par rapport à la version intégrée à Home Assistant :
-  - Utilisation de l'API V6
+  - Utilisation de l'API V6 => PR Officiel ouvert
 
 - Ajouts par rapport à la version intégrée à Home Assistant : 
   - Sensor température (CPU, HDD, SWITCH...)
