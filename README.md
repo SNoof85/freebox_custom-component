@@ -1,3 +1,6 @@
+# Ce composant custom n'est plus supporté/développé, les fonctions qu'il avait en plus sont dans la version core de Home Assistant.
+# Ne pas l'utiliser !
+
 # freebox_custom-component v0.0.1
 
 Custom component Home Assitant pour la Freebox (Mini 4k, Révolution, Delta)
